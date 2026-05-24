@@ -5,7 +5,7 @@ set -euo pipefail
 
 TARBALL_URL="https://github.com/xerolinux/XeroArchArm/archive/refs/heads/main.tar.gz"
 INSTALL_DIR="$HOME/.local/share/xeropi4"
-DEPS=(python python-pyside6 curl libarchive uboot-tools polkit)
+DEPS=(python pyside6 pyside6-tools curl libarchive uboot-tools polkit)
 
 _info() { printf '\e[1;34m::\e[0m %s\n' "$*"; }
 _die()  { printf '\e[1;31mERROR\e[0m %s\n' "$*" >&2; exit 1; }
