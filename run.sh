@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # XeroPi4 — run directly via:
-# curl -fsSL https://raw.githubusercontent.com/YOUR_USER/XeroPi4/main/run.sh | bash
+# curl -fsSL https://raw.githubusercontent.com/xerolinux/XeroArchArm/main/run.sh | bash
 set -euo pipefail
 
-TARBALL_URL="https://github.com/XeroLinux/XeroArchArm/archive/refs/heads/main.tar.gz"
-INSTALL_DIR="$HOME/.local/share/XeroArchArm"
+TARBALL_URL="https://github.com/xerolinux/XeroArchArm/archive/refs/heads/main.tar.gz"
+INSTALL_DIR="$HOME/.local/share/xeropi4"
 DEPS=(python python-pyside6 curl libarchive uboot-tools polkit)
 
 _info() { printf '\e[1;34m::\e[0m %s\n' "$*"; }

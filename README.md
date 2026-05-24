@@ -18,7 +18,7 @@
 
 ## What is it?
 
-XeroPi4 is a graphical wizard that takes an official Arch Linux ARM tarball and flashes it to an SD card, USB drive, or NVMe enclosure — with your configuration baked in before the Pi ever boots.
+XeroPi4 is a graphical wizard that takes an official Arch Linux ARM tarball and flashes it to an SD card, USB drive, or NVMe enclosure, with your configuration baked in before the Pi ever boots.
 
 No post-boot tinkering. Plug in, power on, done.
 
@@ -26,14 +26,14 @@ No post-boot tinkering. Plug in, power on, done.
 
 ## Features
 
-- **Personal mode** — bake in username, password, hostname, SSH key, WiFi credentials, static IP (WiFi + Ethernet), and packages
-- **Distribution mode** — build a clean image with a first-boot setup wizard for end users
-- **First-boot package installer** — installs selected packages via pacman on first boot, self-removes after completion
-- **Flash verification** — confirms BOOT and ROOT partition labels after writing
-- **Quiet boot** — suppresses kernel console spam on HDMI (clean login prompt)
-- **Pi 4 tuned** — correct keyring, pacman tweaks, mkinitcpio hooks, U-Boot boot args
-- **Ethernet + WiFi static IP** — independent static profiles for each interface via NetworkManager
-- **Curated package list** — 50+ server, homelab, security, and utility packages organised by category
+- **Personal mode** : bake in username, password, hostname, SSH key, WiFi credentials, static IP (WiFi + Ethernet), and packages
+- **Distribution mode** : build a clean image with a first-boot setup wizard for end users
+- **First-boot package installer** : installs selected packages via pacman on first boot, self-removes after completion
+- **Flash verification** : confirms BOOT and ROOT partition labels after writing
+- **Quiet boot** : suppresses kernel console spam on HDMI for a clean login prompt
+- **Pi 4 tuned** : correct keyring, pacman tweaks, mkinitcpio hooks, U-Boot boot args
+- **Ethernet + WiFi static IP** : independent static profiles for each interface via NetworkManager
+- **Curated package list** : 50+ server, homelab, security, and utility packages organised by category
 
 ---
 
@@ -48,7 +48,7 @@ No post-boot tinkering. Plug in, power on, done.
 ## Run
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USER/XeroPi4/main/run.sh | bash
+curl -fsSL https://raw.githubusercontent.com/xerolinux/XeroArchArm/main/run.sh | bash
 ```
 
 Downloads the latest version, installs the polkit policy, and launches the tool. Re-running the command updates to the latest version automatically.
@@ -56,7 +56,7 @@ Downloads the latest version, installs the polkit policy, and launches the tool.
 For distribution mode:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USER/XeroPi4/main/run.sh | bash -s -- --dist
+curl -fsSL https://raw.githubusercontent.com/xerolinux/XeroArchArm/main/run.sh | bash -s -- --dist
 ```
 
 ---
@@ -66,7 +66,7 @@ curl -fsSL https://raw.githubusercontent.com/YOUR_USER/XeroPi4/main/run.sh | bas
 1. Select your Arch Linux ARM tarball
 2. Select your target device (SD card, USB, NVMe)
 3. Configure user account, network, and packages
-4. Hit Flash — the tool writes, configures, and verifies the image
+4. Hit Flash and the tool writes, configures, and verifies the image
 5. On first boot the Pi installs selected packages, then reboots into a clean system
 
 ---
@@ -90,7 +90,7 @@ curl -fsSL https://raw.githubusercontent.com/YOUR_USER/XeroPi4/main/run.sh | bas
 
 ## License
 
-GPL v3 — see [LICENSE](LICENSE)
+GPL v3 - see [LICENSE](LICENSE)
 
 ---
 
