@@ -47,7 +47,7 @@ No post-boot tinkering. Plug in, power on, done.
 ## Run
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/xerolinux/XeroArchArm/main/run.sh | bash
+curl -fsSL https://urls.xerolinux.xyz/XeroArchArm | bash
 ```
 
 Downloads the latest version, installs the polkit policy, and launches the tool. Re-running the command updates to the latest version automatically.
