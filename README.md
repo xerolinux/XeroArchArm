@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="assets/xero_logo.png" width="120" alt="XeroPi4 Logo" />
-  <h1>XeroPi4</h1>
+  <img src="assets/xero_logo.png" width="120" alt="Logo" />
+  <h1>Xero's Arch Arm Flasher GUI</h1>
   <p><strong>Arch Linux ARM flasher for Raspberry Pi 4 / 400</strong></p>
   <p>
     <img src="https://img.shields.io/badge/platform-Arch%20Linux-1793d1?style=flat-square&logo=arch-linux&logoColor=white" alt="Arch Linux" />
@@ -12,13 +12,13 @@
 
 ---
 
-![XeroPi4 Screenshot](assets/Screenshot.png)
+![Screenshot](assets/Screenshot.png)
 
 ---
 
 ## What is it?
 
-XeroPi4 is a graphical wizard that takes an official Arch Linux ARM tarball and flashes it to an SD card, USB drive, or NVMe enclosure, with your configuration baked in before the Pi ever boots.
+Xero's Arch Arm Flasher GUI is a graphical wizard that takes an official Arch Linux ARM tarball and flashes it to an SD card, USB drive, or NVMe enclosure, with your configuration baked in before the Pi ever boots.
 
 No post-boot tinkering. Plug in, power on, done.
 
@@ -26,8 +26,7 @@ No post-boot tinkering. Plug in, power on, done.
 
 ## Features
 
-- **Personal mode** : bake in username, password, hostname, SSH key, WiFi credentials, static IP (WiFi + Ethernet), and packages
-- **Distribution mode** : build a clean image with a first-boot setup wizard for end users
+- **Baked configuration** : username, password, hostname, SSH key, WiFi credentials, and static IP (WiFi + Ethernet)
 - **First-boot package installer** : installs selected packages via pacman on first boot, self-removes after completion
 - **Flash verification** : confirms BOOT and ROOT partition labels after writing
 - **Quiet boot** : suppresses kernel console spam on HDMI for a clean login prompt
@@ -52,12 +51,6 @@ curl -fsSL https://raw.githubusercontent.com/xerolinux/XeroArchArm/main/run.sh |
 ```
 
 Downloads the latest version, installs the polkit policy, and launches the tool. Re-running the command updates to the latest version automatically.
-
-For distribution mode:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/xerolinux/XeroArchArm/main/run.sh | bash -s -- --dist
-```
 
 ---
 
